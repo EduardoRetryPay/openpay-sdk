@@ -1,9 +1,7 @@
 <?php
 
-namespace Hotelpay\OpenpaySdk\Src;
+namespace Hotelpay\OpenpaySdk\Src\Exceptions;
 
 use Exception;
 
 class OpenpayException extends Exception {}
-class OpenpayConnectionException extends OpenpayException {}
-class OpenpayValidationException extends OpenpayException {}

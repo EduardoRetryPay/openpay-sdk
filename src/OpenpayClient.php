@@ -5,6 +5,7 @@ namespace Hotelpay\OpenpaySdk\Src;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Exception\RequestException;
+use Hotelpay\OpenpaySdk\Src\Exceptions\OpenpayConnectionException;
 
 final class OpenpayClient
 {
@@ -77,8 +78,8 @@ final class OpenpayClient
     }
 
     /**
-     * @throws OpenpayConnectionException
      * @throws GuzzleException
+     * @throws OpenpayConnectionException
      */
     public function storeCharge(
         $amount,
